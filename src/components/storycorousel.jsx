@@ -86,7 +86,7 @@ const StoryCarousel = () => {
             key={story.id}
             className="flex-shrink-0 w-72   rounded-lg  p-4 text-center"
           >
-            <img src={story.image} alt={story.alt} className="w-full h-[70%] object-cover rounded-lg mb-4" />
+            <img src={story.image} alt={story.alt} className="w-full h-[86%]  rounded-lg mb-4" />
           </div>
         ))}
       </div>
