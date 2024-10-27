@@ -35,7 +35,10 @@ export default function Footer(){
                             e.preventDefault();
                             nav('/blogpage')
                         }} href="#">Blogs</a></li>
-                        <li><a style={{fontSize:'12px',color:'white',marginTop:'10px'}}  href="#">Contact</a></li>
+                        <li><a style={{fontSize:'12px',cursor:"pointer",color:'white',marginTop:'10px'}}  onClick={(e)=>{
+                              e.preventDefault();
+                              nav('/schedule')
+                        }}>Contact</a></li>
                     </div>
                 </div>
             </div>
