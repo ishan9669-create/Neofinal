@@ -75,12 +75,13 @@ const ImageSlider = () => {
   );
 };
 
+
 const storiesData = [
-  { id: 1, image: './blur1.png', alt: 'Person 1' },
-  { id: 2, image: './blur2.png', alt: 'Person 2' },
-  { id: 3, image: './blur3.png', alt: 'Person 3' },
-  { id: 4, image: './blur4.png', alt: 'Person 4' },
-  { id: 4, image: './blur5.png', alt: 'Person 4' }
+  { id: 1, image: "./blur1.png", alt: "Person 1" },
+  { id: 2, image: "./blur2.png", alt: "Person 2" },
+  { id: 3, image: "./blur3.png", alt: "Person 3" },
+  { id: 4, image: "./blur4.png", alt: "Person 4" },
+  { id: 5, image: "./blur5.png", alt: "Person 5" },
 ];
 
 const StoryCarousel = () => {
@@ -97,15 +98,15 @@ const StoryCarousel = () => {
 
     setIsTransitioning(true);
     carouselRef.current.style.transition = `transform ${transitionDuration}ms ease-in-out`;
-    carouselRef.current.style.transform = `translateX(-500px)`; // Move one card width (300px)
+    carouselRef.current.style.transform = `translateX(-500px)`; // Move one card width (500px)
 
     // After the transition ends, rearrange the order of stories
     setTimeout(() => {
       const firstStory = stories[0];
       const newStories = stories.slice(1).concat(firstStory);
       setStories(newStories);
-      carouselRef.current.style.transition = 'none'; // Remove transition temporarily to reset position
-      carouselRef.current.style.transform = 'translateX(0)'; // Reset position to 0
+      carouselRef.current.style.transition = "none"; // Remove transition temporarily to reset position
+      carouselRef.current.style.transform = "translateX(0)"; // Reset position to 0
       setIsTransitioning(false);
     }, transitionDuration);
   };
@@ -118,59 +119,55 @@ const StoryCarousel = () => {
     const lastStory = stories[stories.length - 1];
     const newStories = [lastStory].concat(stories.slice(0, -1));
     setStories(newStories);
-    carouselRef.current.style.transition = 'none'; // Temporarily remove transition
-    carouselRef.current.style.transform = `translateX(-500px)`; // Start from the left (to simulate last story appearing first)
+    carouselRef.current.style.transition = "none"; // Temporarily remove transition
+    carouselRef.current.style.transform = `translateX(+500px)`; // Start from the left (simulate last story appearing first)
 
-    // After position is set, we apply the transition for smooth movement
+    // After position is set, apply the transition for smooth movement
     setTimeout(() => {
       carouselRef.current.style.transition = `transform ${transitionDuration}ms ease-in-out`;
-      carouselRef.current.style.transform = 'translateX(0)'; // Move smoothly to the 0 position
+      carouselRef.current.style.transform = "translateX(0)"; // Move smoothly to the 0 position
       setTimeout(() => setIsTransitioning(false), transitionDuration);
     }, 20); // Small delay to ensure transition applies
   };
 
   return (
-    <div className="relative bottom-[700px] w-full h-[400px]   p-5 rounded-lg">
-        <div className="flex justify-start items-center ">
-  <div className='flex flex-col  justify-center ml-0  w-screen '>
-  <div className="flex   gap-3 mb-4 ml-[300px] sm:ml-[1260px]">
-    <button
-        onClick={scrollLeft}
-        className="  bg-[#FFFFFF33] text-[#FFFFFF] px-5 rounded-full hover:bg-gray-600 "
-      >
-        &lt;
-      </button>
+    <div className="relative bottom-[700px] w-full h-[400px] p-5 rounded-lg">
+      <div className="flex justify-start items-center">
+        <div className="flex flex-col justify-center ml-0 w-screen">
+          <div className="flex gap-3 mb-4 ml-[300px] sm:ml-[1260px]">
+            <button
+              onClick={scrollLeft}
+              className="bg-[#FFFFFF33] text-[#FFFFFF] px-5 rounded-full hover:bg-gray-600"
+            >
+              &lt;
+            </button>
 
-      <button
-        onClick={scrollRight}
-        className="    bg-[#FFFFFF33] text-[#FFFFFF] px-5 py-1 rounded-full hover:bg-gray-600 "
-      >
-        &gt;
-      </button>
-    </div>
-
-    <div
-        className="flex gap-2 px-32 no-scrollbar  w-screen overflow-x-scroll "
-        ref={carouselRef}
-        style={{ transition: `transform ${transitionDuration}ms ease-in-out` }}
-      >
-        {/* Story Cards */}
-        {stories.map((story) => (
-          <div
-            key={story.id} 
-            className="flex-shrink-0  w-72 h-[450px] rounded-lg p-4"
-          >
-            <img src={story.image} alt={story.alt} className="w-full h-full rounded-lg" />
+            <button
+              onClick={scrollRight}
+              className="bg-[#FFFFFF33] text-[#FFFFFF] px-5 py-1 rounded-full hover:bg-gray-600"
+            >
+              &gt;
+            </button>
           </div>
-        ))}
+
+          <div
+            className="flex gap-2 px-32 no-scrollbar w-screen overflow-x-scroll"
+            ref={carouselRef}
+            style={{ transition: `transform ${transitionDuration}ms ease-in-out` }}
+          >
+            {/* Story Cards */}
+            {stories.map((story) => (
+              <div
+                key={story.id}
+                className="flex-shrink-0 w-72 h-[450px] rounded-lg p-4"
+              >
+                <img src={story.image} alt={story.alt} className="w-full h-full rounded-lg" />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-  </div>
- 
-   
-  
-</div>
-     
-  </div>
+    </div>
   );
 };
 
