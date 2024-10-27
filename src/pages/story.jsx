@@ -145,7 +145,7 @@ export default function Story(){
        <div className="w-full lg:w-[500px] flex flex-col gap-6 lg:gap-2">
                 <div className="border-b-2 h-[100px] lg:h-[200px] flex items-center gap-4 mt-4" id="borderwala">
                     <span className="w-[30px] h-[30px] rounded-full flex border-black border-2 justify-center items-center text-sm lg:text-base">02</span>
-                    <span className="text-sm lg:text-lg">The Problem</span>
+                    <span className="text-sm lg:text-lg">The Solution</span>
                 </div>
                 
                 <div className="flex h-[200px] lg:h-[300px] rounded-md text-white justify-center items-center flex-col bg-green-900">
@@ -179,132 +179,125 @@ export default function Story(){
        </div>
 
 
-     
-      <div className="flex flex-col lg:flex-row gap-8 h-auto lg:h-[500px] mx-4 sm:mx-8 lg:mx-24 justify-center items-center mt-16 lg:mt-32">
-      <div className="w-full lg:max-w-[500px] flex flex-col gap-4 h-full" style={{ height: '100%' }}>
-        {/* Question 1 */}
-        <div
-          onClick={() => setQ1(!q1)}
-          className="p-2 hover:bg-slate-400 rounded-lg w-[500px] bg-slate-100 cursor-pointer"
-          style={{
-            transitionDuration: '0.4s',
-            backgroundColor: `${q1 ? '#F1FFE6' : ''}`,
-          }}
-        >
-          <span className="text-xs flex w-[480px] justify-between items-center">
-          What is NEO CFO? {!q1 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-green-800 text-sm" />}
-          </span>
-          <div style={{ display: `${q1 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
-            <div className="text-[10px] ">
-            NEO CFO is a comprehensive finance automation platform designed to streamline and automate your financial processes. From managing automation of accounting entries and GST taxation to handling procure-to-pay processes, NEO CFO helps you optimize and simplify your day-to-day financial tasks helping you free up to 80% of your time. 
-            </div>
-            
-           
-          </div>
+       <div className="flex flex-col lg:flex-row gap-8 h-auto lg:h-[500px] mx-4 sm:mx-8 lg:mx-24 justify-center items-center mt-16 lg:mt-32">
+  <div className="w-full lg:max-w-[500px] flex flex-col gap-4 h-full">
+    {/* Question 1 */}
+    <div
+  onClick={() => setQ1(!q1)}
+  className="p-2 hover:bg-slate-400 rounded-lg w-full sm:w-[500px] bg-slate-100 cursor-pointer transition-all duration-400"
+  style={{
+    backgroundColor: `${q1 ? '#F1FFE6' : ''}`,
+  }}
+>
+  <span className="text-xs flex justify-between items-center">
+    What is NEO CFO? {!q1 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-green-800 text-sm" />}
+  </span>
+  <div className={`mt-1 text-slate-500 ${q1 ? 'block' : 'hidden'}`}>
+    <div className="text-[10px] sm:text-[11px] md:text-[12px]">
+      NEO CFO is a comprehensive finance automation platform designed to streamline and automate your financial processes. From managing automation of accounting entries and GST taxation to handling procure-to-pay processes, NEO CFO helps you optimize and simplify your day-to-day financial tasks, freeing up to 80% of your time.
+    </div>
+  </div>
+</div>
+
+
+    {/* Question 2 */}
+    <div
+      onClick={() => setQ2(!q2)}
+      className="p-2 hover:bg-slate-400 rounded-lg w-full sm:w-[500px] lg:w-[500px] bg-slate-100 cursor-pointer"
+      style={{
+        transitionDuration: '0.4s',
+        backgroundColor: `${q2 ? '#F1FFE6' : ''}`,
+      }}
+    >
+      <span className="text-xs flex justify-between items-center">
+        Is my financial information secure? {!q2 ? <GrAdd className="text-green-800 text-sm" /> : <FaMinus className="text-sm text-green-800" />}
+      </span>
+      <div style={{ display: `${q2 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
+        <div className="text-[10px]">
+          Yes, at NEO CFO, we prioritize your data security. We use advanced encryption methods and security protocols to ensure your financial data is protected and confidential and comply with industry-standard security practices to ensure your financial information is protected. Regular security audits and updates are conducted to maintain the highest level of security.
         </div>
+      </div>
+    </div>
 
-        {/* Question 2 */}
-        <div
-          onClick={() => setQ2(!q2)}
-          className="p-2 hover:bg-slate-400 rounded-lg w-[500px] bg-slate-100 cursor-pointer"
-          style={{
-            transitionDuration: '0.4s',
-            backgroundColor: `${q2 ? '#F1FFE6' : ''}`,
-          }}
-        >
-          <span className="text-xs flex w-[480px] justify-between items-center">
-          Is my financial information secure? {!q2 ? <GrAdd className="text-green-800 text-sm" /> : <FaMinus className="text-sm text-green-800" />}
-          </span>
-          <div style={{ display: `${q2 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
-            <div className="text-[10px]">
-            Yes, at NEO CFO, we prioritize your data security. We use advanced encryption methods and security protocols to ensure your financial data is protected and confidential and comply with industry-standard security practices to ensure your financial information is protected. Regular security audits and updates are conducted to maintain the highest level of security.rs that provide interactive three-dimensional (3D) representations of the earth's surface.
-
-            </div>
-           
-          </div>
+    {/* Question 3 */}
+    <div
+      onClick={() => setQ3(!q3)}
+      className="p-2 hover:bg-slate-400 rounded-lg w-full sm:w-[500px] lg:w-[500px] bg-slate-100 cursor-pointer"
+      style={{
+        transitionDuration: '0.4s',
+        backgroundColor: `${q3 ? '#F1FFE6' : ''}`,
+      }}
+    >
+      <span className="text-xs flex justify-between items-center">
+        What services does NEO CFO offer?
+        {!q3 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-sm text-green-800" />}
+      </span>
+      <div style={{ display: `${q3 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
+        <div className="text-[10px]">
+          NEO CFO offers a wide range of services, including, but not limited to: Automated accounting entries, GST taxation management, Procure-to-pay process automation, Financial data integration, Predictive analytics for P&L and cash flow outcomes, Expense categorization and management, Reconciliation of GST input with accounting records.
         </div>
+      </div>
+    </div>
 
-        {/* Question 3 */}
-        <div
-          onClick={() => setQ3(!q3)}
-          className="p-2 hover:bg-slate-400 rounded-lg w-[500px] bg-slate-100 cursor-pointer"
-          style={{
-            transitionDuration: '0.4s',
-            backgroundColor: `${q3 ? '#F1FFE6' : ''}`,
-          }}
-        >
-          <span className="text-xs flex w-[480px] justify-between items-center">
-          What services does NEO CFO offer?
-            {!q3 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-sm text-green-800" />}
-          </span>
-          <div style={{ display: `${q3 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
-            <div className="text-[10px]">
-            NEO CFO offers a wide range of services, including, but not limited to: Automated accounting entries GST taxation management Procure-to-pay process automation Financial data integration Predictive analytics for P&L and cash flow outcomes Expense categorization and management Reconciliation of GST input with accounting records.
-            </div>
-          </div>
+    {/* Question 4 */}
+    <div
+      onClick={() => setQ4(!q4)}
+      className="p-2 hover:bg-slate-400 rounded-lg w-full sm:w-[500px] lg:w-[500px] bg-slate-100 cursor-pointer"
+      style={{
+        transitionDuration: '0.4s',
+        backgroundColor: `${q4 ? '#F1FFE6' : ''}`,
+      }}
+    >
+      <span className="text-xs flex justify-between items-center">
+        Can I integrate other financial tools with the platform? {!q4 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-sm text-green-800" />}
+      </span>
+      <div style={{ display: `${q4 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
+        <div className="text-[10px]">
+          Yes, NEO CFO supports integration with various financial tools and platforms. You can easily connect your accounting software (i.e., Tally or Zoho Books), GST portal, and other financial services/bank accounts to streamline your workflows and ensure all your data is centralized in one place.
         </div>
+      </div>
+    </div>
 
-        {/* Question 4 */}
-        <div
-          onClick={() => setQ4(!q4)}
-          className="p-2 hover:bg-slate-400 rounded-lg w-[500px] bg-slate-100 cursor-pointer"
-          style={{
-            transitionDuration: '0.4s',
-            backgroundColor: `${q4 ? '#F1FFE6' : ''}`,
-          }}
-        >
-          <span className="text-xs flex w-[480px] justify-between items-center">
-          Can I integrate other financial tools with the platform? {!q4 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-sm text-green-800" />}
-          </span>
-          <div style={{ display: `${q4 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
-            <div className="text-[10px]">
-            Yes, NEO CFO supports integration with various financial tools and platforms. You can easily connect your accounting software (i.e. Tally or Zoho Books), GST portal, and other financial services/ bank accounts to streamline your workflows and ensure all your data is centralized in one place.
-            </div>
-          </div>
+    {/* Question 5 */}
+    <div
+      onClick={() => setQ5(!q5)}
+      className="p-2 hover:bg-slate-400 rounded-lg w-full sm:w-[500px] lg:w-[500px] bg-slate-100 cursor-pointer"
+      style={{
+        transitionDuration: '0.4s',
+        backgroundColor: `${q5 ? '#F1FFE6' : ''}`,
+      }}
+    >
+      <span className="text-xs flex justify-between items-center">
+        How does NEO CFO handle GST compliance? {!q5 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-sm text-green-800" />}
+      </span>
+      <div style={{ display: `${q5 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
+        <div className="text-[10px]">
+          NEO CFO automates GST compliance by integrating with the GST portal and providing tools for managing GST returns, reconciling GST input with accounting records, and ensuring accurate GST calculations. This helps you stay compliant with the latest GST regulations effortlessly.
         </div>
+      </div>
+    </div>
 
-        {/* Question 5 */}
-        <div
-          onClick={() => setQ5(!q5)}
-          className="p-2 hover:bg-slate-400 rounded-lg w-[500px] bg-slate-100 cursor-pointer"
-          style={{
-            transitionDuration: '0.4s',
-            backgroundColor: `${q5 ? '#F1FFE6' : ''}`,
-          }}
-        >
-          <span className="text-xs flex w-[480px] justify-between items-center">
-          How does NEO CFO handle GST compliance? {!q5 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-sm text-green-800" />}
-          </span>
-          <div style={{ display: `${q5 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
-            <div className="text-[10px]">
-            NEO CFO automates GST compliance by integrating with the GST portal and providing tools for managing GST returns, reconciling GST input with accounting records, and ensuring accurate GST calculations. This helps you stay compliant with the latest GST regulations effortlessly.
-
-
-            </div>
-          </div>
+    {/* Question 6 */}
+    <div
+      onClick={() => setQ6(!q6)}
+      className="p-2 hover:bg-slate-400 rounded-lg w-full sm:w-[500px] lg:w-[500px] bg-slate-100 cursor-pointer"
+      style={{
+        transitionDuration: '0.4s',
+        backgroundColor: `${q6 ? '#F1FFE6' : ''}`,
+      }}
+    >
+      <span className="text-xs flex justify-between items-center">
+        Can multiple users access the same NEO CFO account? {!q6 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-sm text-green-800" />}
+      </span>
+      <div style={{ display: `${q6 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
+        <div className="text-[10px]">
+          Yes, NEO CFO allows multiple users to access the same account. You can add team members and assign different roles and permissions based on their responsibilities. This facilitates collaboration and ensures that everyone on your team can contribute effectively.
         </div>
+      </div>
+    </div>
+  
 
-        {/* Question 6 */}
-        <div
-          onClick={() => setQ6(!q6)}
-          className="p-2 hover:bg-slate-400 rounded-lg w-[500px] bg-slate-100 cursor-pointer"
-          style={{
-            transitionDuration: '0.4s',
-            backgroundColor: `${q6 ? '#F1FFE6' : ''}`,
-          }}
-        >
-          <span className="text-xs flex justify-between w-[480px] items-center">
-            
-Can multiple users access the same NEO CFO account?
- {!q6 ? <GrAdd className="text-sm text-green-800" /> : <FaMinus className="text-sm text-green-800" />}
-          </span>
-          <div style={{ display: `${q6 ? 'block' : 'none'}` }} className="mt-1 text-slate-500">
-            <div className="text-[10px]">
-            Yes, NEO CFO allows multiple users to access the same account. You can add team members and assign different roles and permissions based on their responsibilities. This facilitates collaboration and ensures that everyone on your team can contribute effectively.
 
-            </div>
-          </div>
-        </div>
 
         {/* Question 7 */}
        
