@@ -112,7 +112,7 @@ export default function Home(){
             <img src="./image2.png" alt="Image 2" />
             <img src="./image3.png" alt="Image 3" />
             <img src="./image4.png" alt="Image 4" />
-            <img src="./image5.png" alt="Image 5" />
+            <img src="./last.png" className='rounded-lg' alt="Image 5" />
         </div>
     </div>
 
