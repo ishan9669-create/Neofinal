@@ -13,7 +13,9 @@ export default function Footer(){
                 <div id="footer-up-left">
                     <img src="./Horizontal _Neo CFO_ Logo _ White@2x 1 (1).png" alt="logo"/>
                     <p>Empowering India's Businesses ,<br /> One Click at a Time.</p>
-                    <img src="./Property 1=Default.png" onClick={()=> nav('/read')} alt="email"/>
+                    <img src="./Property 1=Default.png" onClick={()=> {
+                        nav('/read')
+                    }} alt="email"/>
                 </div>
                 <div id="footer-up-right" className='flex  text-white sm:flex-row flex-col w-[200px] justify-between items-start ml-3 '>
                     <div >
