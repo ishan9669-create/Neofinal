@@ -132,49 +132,49 @@ export default function Home(){
                 <div id="testimonials-track">
                     <div id="testimonial" style={{backgroundColor:'#FFFFFF80'}}>
                         <div className='flex items-center '>
-                        <img src="./ReviewImage3.jpeg" alt="Person 1"/>
+                        
 
-                        <div className='flex flex-col text-[14px] justify-center   w-full'>
+                        <div className='  flex flex-col text-[14px] justify-center   w-full'>
                         <h3 className='text-green-950'>Kevin S</h3>
                         <p className=' text-[14px] text-green-800'>Founder of a Startup</p>
                         </div>
                         
                         </div>
-                        <p className='text-[14px]   text-green-950'>
+                        <p className='mt-3 text-[14px]   text-green-950'>
  "Neo CFO has completely transformed how I manage finances, allowing me to focus more on growing my business!"
 </p>
                     </div>
                     <div id="testimonial" style={{backgroundColor:'#FFFFFF80'}}>
-                        <div className='flex items-center'>
-                        <img src=".//ReviewImage2.jpeg" alt="Person 2" />
+                        <div className='flex justify-start '>
+                        
 
-                        <div className='flex flex-col text-[14px] justify-center w-full'>
+                        <div className=' flex flex-col text-[14px] justify-center w-full'>
                         <h3 className='text-green-950'>Rebecca T</h3>
                         <p className='text-[14px] text-green-800'>Head of Finance</p>
                         </div>
                         </div>
-                        <p className='text-[14px] text-green-950'>"Automating repetitive tasks with Neo CFO has freed up my time for more strategic work—game-changing!"</p>
+                        <p className='mt-3 text-[14px] text-green-950'>"Automating repetitive tasks with Neo CFO has freed up my time for more strategic work—game-changing!"</p>
                     </div>
                     <div id="testimonial" style={{backgroundColor:'#FFFFFF80'}}>
                         <div className='flex items-center'>
-                        <img src="./ReviewImage.jpeg" alt="Person3"/>
-                        <div className='flex flex-col text-[14px] justify-center   w-full'>
+                       
+                        <div className=' flex flex-col text-[14px] justify-center   w-full'>
                         <h3 className='text-green-950'>Rahul</h3>
-                        <p className='text-[14px] text-green-800'>Small Business Owner
+                        <p className=' text-[14px] text-green-800'>Small Business Owner
 
 </p>
                         </div>
                         </div>
                         
-                        <p className='text-[14px] text-green-950'>"The GST integration is seamless. I no longer worry about tax filing errors—it’s all handled for me!"
+                        <p className='mt-3 text-[14px] text-green-950'>"The GST integration is seamless. I no longer worry about tax filing errors—it’s all handled for me!"
 
 </p>
                     </div>
 
                     <div id="testimonial" style={{backgroundColor:'#FFFFFF80'}}>
                         <div className='flex items-center'>
-                        <img src="./ReviewImage.jpeg" alt="Person3"/>
-                        <div className='flex flex-col text-[14px] items-center   w-full'>
+                        
+                        <div className=' flex flex-col text-[14px] items-center   w-full'>
                         <h3 className='text-green-950'>Priyanka</h3>
                         <p className='text-[14px] text-green-800'>Founder
 
@@ -182,15 +182,15 @@ export default function Home(){
                         </div>
                         </div>
                         
-                        <p className='text-[14px] text-green-950'>"Neo CFO has made financial reporting incredibly simple, saving hours every month on closing the books!"
+                        <p className='mt-3 text-[14px] text-green-950'>"Neo CFO has made financial reporting incredibly simple, saving hours every month on closing the books!"
 
 </p>
                     </div>
 
                     <div id="testimonial" style={{backgroundColor:'#FFFFFF80'}}>
                         <div className='flex items-center'>
-                        <img src="./ReviewImage.jpeg" alt="Person3"/>
-                        <div className='flex flex-col text-[14px] justify-center   w-full'>
+                       
+                        <div className=' flex flex-col text-[14px] justify-center   w-full'>
                         <h3 className='text-green-950'>Nithin</h3>
                         <p className='text-[14px] text-green-800'>Finance Manager
 
@@ -198,15 +198,15 @@ export default function Home(){
                         </div>
                         </div>
                         
-                        <p className='text-[14px] text-green-950'>"The integration with our accounting software was flawless. Neo CFO truly makes multi-org management easy!"
+                        <p className='mt-3 text-[14px] text-green-950'>"The integration with our accounting software was flawless. Neo CFO truly makes multi-org management easy!"
 
 </p>
                     </div>
 
                     <div id="testimonial" style={{backgroundColor:'#FFFFFF80'}}>
                         <div className='flex items-center'>
-                        <img src="./ReviewImage.jpeg" alt="Person3"/>
-                        <div className='flex flex-col text-[14px] justify-center w-full'>
+                       
+                        <div className='  flex flex-col text-[14px] justify-center w-full'>
                         <h3 className='text-green-950'>Kishor S</h3>
                         <p className='text-[14px] text-green-800'>SME Business Owner
 
@@ -214,7 +214,7 @@ export default function Home(){
                         </div>
                         </div>
                         
-                        <p className='text-[14px] text-green-950'>"Neo CFO’s AI-driven categorization of expenses has eliminated the guesswork—what a relief!"
+                        <p className='mt-3 text-[14px] text-green-950'>"Neo CFO’s AI-driven categorization of expenses has eliminated the guesswork—what a relief!"
 
 </p>
                     </div>
